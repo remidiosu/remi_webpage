@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+}
+
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(126, 125, 145, 0.7), rgba(126, 125, 145, 0.7)), url("https://wallpaperaccess.com/full/1381204.gif");
+  background-position: center;
+  background-position: cover;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  padding: 2% 6%;
+}
+
+.bar {
+  position: fixed;
+  width: 4%;
+  align-items: center;
+  height: 100%;
+  background: #0a0129;
+  text-align:center;
+
+}
+
+.bar ul {
+  position: relative;
+  top: 20px;
+  Right: 25px;
+}
+.bar ul li {
+  text-decoration: none;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  align-items:center;
+  text-align: center;
+}
+
+
+
+.bar ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.bar ul li:hover::after {
+  width: 156%;
+}
+
+.text-box {
+  width: 96%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 17px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  margin: 0;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid darkblue;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .bar ul li {
+    display: block;
+    align-items: right;
+    text-align: right;
+  }
+  .bar ul {
+    Right: 0;
+  }
+  .bar {
+    position: absolute;
+    background: #0a0129;
+    height: 100vh;
+    width: 100px;
+    top: 0;
+    right: 93%;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+  }
+}
+
+.main_content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-image
+{
+  background-image: url("https://i.pinimg.com/originals/7c/1f/f2/7c1ff2e8a1e61fc9c0cc9cf410cd5c49.gif");
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  color: white;
+  /* Additional styles for the text overlay */
+}
+
+.text-overlay h2 {
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.invisible-button {
+  position: absolute;
+  top: 76%;
+  left: 47%;
+  width: 5%;
+  height: 7%;
+  opacity: 0;
+  cursor: pointer;
+  /* Additional styles for the invisible button */
+}
+
+/* Content block */
+
+.content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content p {
+  color: #0d0f45;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 32%;
+  background: #b3b7e8;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin: 20px;
+  transition: 0.5s;
+}
+.row a {
+  text-decoration: none;
+}
+
+.col h3 {
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.col:hover {
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  opacity: 0.9;
+}
+
+h2 {
+  color: white;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.cat {
+  text-align: center;
+}
+
+
+.cont {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: left;;
+
+}
+
+.cont p {
+  flex-basis: 32%;
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: left;
+}
+
+.cont img {
+  align-items: center;
+  flex-basis: 32%;
+}
+
+.list ol {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.list ol li {
+  right: 20%;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: left;
+}
+
+.header-study {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://cutewallpaper.org/21/hd-wallpaper-gif/Animated-Gif-Background-1920x1080-Free-Hd-Gif-Wallpapers-.gif");
+  background-position: center;
+  background-position: cover;
+  position: relative;
+}
+
+.text {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+about-col {
+  flex-basis: 10%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  height: 1000px;
+  width: 1000px
+}
+
+
+/*---------------Books page------------------------*/
+
+.header-books {
+  min-height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(126, 125, 145, 0.7), rgba(126, 125, 145, 0.7)), url("https://about.proquest.com/globalassets/proquest/media/images/decrotive/oldbooks.jpg");
+  background-position: center;
+  background-position: cover;
+  position: relative;
+}
+
+.text-books {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.text-books .mydiv {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+
+
+/*        about me=-----------------------*/
+
+.head {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(126, 125, 145, 0.7), rgba(126, 125, 145, 0.7)), url("https://wallpapershome.ru/images/pages/pic_h/22519.jpg");
+  position: relative;
+  background-position: center;
+  background-position: cover;
+}
